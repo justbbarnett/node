@@ -69,6 +69,18 @@ function liri (){
         break;
 
         case 'do-what-it-says':
+            fs.readFile("random.txt", "utf-8", function (error, data){
+                if (!error){
+                    var pullData = data.split(", ");
+                    console.log(pullData)
+
+                    var command = pullData[0];
+                    var input = pullData[1];
+                    console.log("command: " + command + "\t input: " + input)
+                    
+                    liri();
+                }
+            })
         break;
 
         case undefined:
