@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/justbbarnett/node#readme",
   "dependencies": {
+    "chalk-animation": "^1.5.2",
+    "colors": "^1.2.1",
     "dotenv": "^5.0.1",
+    "request": "^2.85.0",
     "request-promise": "^4.2.2",
     "require": "^2.4.20",
     "require-promise": "^1.0.1",
